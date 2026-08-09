@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgba(128, 128, 128, 0.407);
+            border: 2px solid black;
+            width: 1500px;
+            height: 700px;
+        }
+        .box1{
+            background-color: rgba(137, 43, 226, 0.44);
+            width: 270px;
+            height: 50px;
+            border:2px solid rgba(137, 43, 226, 0.44);
+            border-radius: 5px;
+            margin: 10px;
+            animation-name: right_move;
+            position: relative;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+           animation-delay: 2s;
+           animation-timing-function: linear;
+           animation-direction: alternate;
+           
+    
+        }
+        .box2{
+             background-color: rgba(137, 43, 226, 0.44);
+            width: 270px;
+            height: 50px;
+            border:2px solid rgba(137, 43, 226, 0.44);
+            border-radius: 5px;
+            margin: 10px;
+            animation-name: left_move;
+            position: relative;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+           animation-delay: 2s;
+           animation-timing-function: linear;
+           animation-direction:alternate-reverse;
+           animation-fill-mode:both;
+           
+        }
+        #circle{
+             background-color: rgba(137, 43, 226, 0.44);
+            width: 100px;
+            height: 100px;
+             border:3px solid rgba(137, 43, 226, 0.799);
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            top: 180px;
+            left: 500px;
+            animation: circle_move 3s linear  3s infinite alternate-reverse both running;
+        }
+        @keyframes right_move{
+            from{
+                    top:0;
+                    left:0;
+            }
+            to{
+                top:0;
+                left:1150px;
+            }
+            
+        }
+        @keyframes left_move{
+            from{
+                    top:550px;
+                    left:0px;
+            }
+            to{
+                top:550px;
+                left:1150px;
+            }
+            
+        }
+        @keyframes circle_move{
+            0%{
+                top:1%;
+                left:5%;
+            }
+            30%{
+
+                top:5%;
+                left:90%;
+            }
+            60%{
+                top:70%;
+                left:10%;
+            }
+            100%{
+                top:75%;
+                left:90%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            
+        </div>
+        <div class="box2">
+
+        </div>
+        <div id="circle"></div>
+    </div>
+</body>
+</html>
