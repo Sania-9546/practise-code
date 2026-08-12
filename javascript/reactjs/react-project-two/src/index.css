@@ -5,11 +5,11 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background-color: #771010;
+  background-color: #565151;
   display: flex;
  justify-content: center;
   align-items: center;
   height: 100vh; 
-  font-size: 5rem;
+  font-size: 1.5rem;
   color: #fff;
 }

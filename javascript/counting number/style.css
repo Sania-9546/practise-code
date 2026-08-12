@@ -1,0 +1,50 @@
+body{
+    background-color: #5f5d5d;
+    width: 100%;
+    height: 100%;
+}
+#counting-number{
+    background-color: #2d2c2c7e;
+    width: 45%;
+    height: 350px;
+    margin: 25% auto;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+#counting-number-title{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+#count-description{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom:30px;
+}
+#count-buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+#increment{
+    background-color: rgba(9, 9, 129, 0.57);
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: aliceblue;
+}
+#decrement{
+    background-color: rgba(9, 9, 129, 0.57);
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: aliceblue;
+}
+ #increment:hover,#decrement:hover{
+    background-color: rgba(55, 55, 113, 0.87);
+}
